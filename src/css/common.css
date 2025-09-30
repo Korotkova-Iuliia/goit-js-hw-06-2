@@ -22,3 +22,36 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery_item {
+  flex: 0 0 calc(25% - 16px);
+  border-radius: 4px;
+  /*  (или 16/9, или квадрат 1/1) */
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery_img {
+  display: block;
+  max-width: 100%; /* подгон по ширине контейнера */
+  height: 100%; /* авто-высота, сохраняет пропорции */
+  /* object-fit: cover; */
+  /* width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;  */
+}
