@@ -12,9 +12,12 @@ function onInputBlur(e) {
 
   inputEl.classList.remove('valid', 'invalid');
 
-  countInputSignifier === validValue
-    ? inputEl.classList.add('valid')
-    : inputEl.classList.add('invalid');
+  if (countInputSignifier === validValue) {
+    inputEl.classList.add('valid');
+  } else {
+    inputEl.classList.add('invalid');
+  }
+
   // inputEl.classList.add(
   //   countInputSignifier === validValue ? 'valid' : 'invalid'
   // );
