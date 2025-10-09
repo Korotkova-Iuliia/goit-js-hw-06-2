@@ -48,7 +48,6 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-console.log(images);
 const galleryEl = document.querySelector('.gallery');
 const galleryItem = images
   .map(({ url, alt }) => {
